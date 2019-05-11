@@ -1,5 +1,4 @@
 pub mod commonregex {
-    mod regex_drawer;
     mod matcher;
 
     pub mod internet;

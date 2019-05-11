@@ -1,5 +1,6 @@
-use super::regex_drawer;
 use super::matcher;
+
+const FR_REGEX: &'static str = r#"(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}"#;
 
 /// Returns matched French phone numbers as a vector of strings
 ///
@@ -27,7 +28,7 @@ use super::matcher;
 /// assert_eq!(vec!["0606060606"], commonregex::phone::fr(&text));
 /// ```
 pub fn fr(text: &String) -> Vec<&str> {
-    matcher::match_results(text, regex_drawer::phone::FR)
+    matcher::match_results(text, FR_REGEX)
 }
 
 #[cfg(test)]
