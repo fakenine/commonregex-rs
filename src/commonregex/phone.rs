@@ -29,3 +29,26 @@ use super::matcher;
 pub fn fr(text: &String) -> Vec<&str> {
     matcher::match_results(text, regex_drawer::phone::FR)
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn phone_fr() {
+        let text = String::from("On se rejoint au café ? Voici mon num 0606060606");
+        assert_eq!(vec!["0606060606"], fr(&text));
+    }
+
+    #[test]
+    fn phone_fr_spaces() {
+        let text = String::from("On se rejoint au café ? Voici mon num 06 06 06 06 06");
+        assert_eq!(vec!["06 06 06 06 06"], fr(&text));
+    }
+
+    #[test]
+    fn phone_fr_dots() {
+        let text = String::from("On se rejoint au café ? Voici mon num 06.06.06.06.06");
+        assert_eq!(vec!["06.06.06.06.06"], fr(&text));
+    }
+}

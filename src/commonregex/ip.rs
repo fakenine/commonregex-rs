@@ -21,3 +21,14 @@ use super::matcher;
 pub fn v4(text: &String) -> Vec<&str> {
     matcher::match_results(text, regex_drawer::ip::V4)
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn ipv4() {
+        let text = String::from("Started GET '/' for 127.0.0.1 at 2019-05-11 00:51:35");
+        assert_eq!(vec!["127.0.0.1"], v4(&text));
+    }
+}
