@@ -6,7 +6,7 @@ description = "🔎 Find common expressions in a string"
 edition = "2018"
 license = "MIT"
 repository = "https://github.com/fakenine/commonregex-rs"
-keywords = ["regex", "commonregex", "pattern matching"]
+keywords = ["regex", "commonregex", "pattern-matching"]
 categories = ["parsing"]
 
 [dependencies]
