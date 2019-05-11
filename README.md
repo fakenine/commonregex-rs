@@ -30,6 +30,12 @@ let filtered_ips = commonregex::ip::v4(&log);
 commonregex::ip::v4(&text)
 ```
 
+**IPv6**
+
+```rust
+commonregex::ip::v6(&text)
+```
+
 ### Phone numbers
 
 **French phone numbers**
