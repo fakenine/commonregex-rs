@@ -88,8 +88,12 @@ commonregex::phone::us(&text)
 
 ## Documentation
 
-Full documentation is available [here](https://docs.rs/commonregex_rs/0.1.0/commonregex_rs/)
+Full documentation is available [here](https://docs.rs/commonregex_rs/0.1.0/commonregex_rs/).
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/fakenine/commonregex-rs/blob/master/CONTRIBUTING.md) for information on how to contribute.
 
 ## Notes
 
-This project was inspired by [commonregex](https://github.com/mingrammer/commonregex)
+This project was inspired by [commonregex](https://github.com/mingrammer/commonregex).
