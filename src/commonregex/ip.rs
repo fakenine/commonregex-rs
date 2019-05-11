@@ -14,9 +14,11 @@ use super::matcher;
 ///
 /// use commonregex_rs::commonregex;
 ///
-/// let log = String::from("Started GET '/' for 127.0.0.1 at 2019-05-11 00:51:35");
-///
-/// assert_eq!(vec!["127.0.0.1"], commonregex::ip::v4(&log));
+/// let log = String::from("
+/// Started GET '/' for 127.0.0.1 at 2019-05-11 00:51:35
+/// Started GET '/' for 10.10.0.1 at 2019-05-11 00:52:05");
+/// 
+/// assert_eq!(vec!["127.0.0.1", "10.10.0.1"], commonregex::ip::v4(&log));
 /// ```
 pub fn v4(text: &String) -> Vec<&str> {
     matcher::match_results(text, regex_drawer::ip::V4)
