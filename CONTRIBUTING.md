@@ -6,9 +6,9 @@ Please note we have a [code of conduct](https://github.com/fakenine/commonregex-
 
 ## Pull Request Process
 
-1. Fork the project
+1. Fork the project from the `develop` branch
 2. Create a feature branch
 3. Write the changes you wish to add
 4. Update the README.md and the documentation with details of changes to the interface
 5. Write tests if you added new code and make sure that the existing test suite pass
-6. Push your branch and open a PR on GitHub
+6. Push your branch and open a PR on GitHub from your branch to the `develop` branch
