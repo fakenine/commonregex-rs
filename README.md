@@ -22,6 +22,14 @@ let filtered_ips = commonregex::ip::v4(&log);
 
 ## Features
 
+### Internet
+
+**Email**
+
+```rust
+commonregex::internet::email(&text)
+```
+
 ### IP Addresses
 
 **IPv4**
