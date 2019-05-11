@@ -22,6 +22,28 @@ pub fn email(text: &String) -> Vec<&str> {
     matcher::match_results(text, regex_drawer::internet::EMAIL)
 }
 
+/// Returns matched URLs as a vector of strings
+///
+/// # Arguments
+///
+/// * `text` - A String representing the text in which to search.
+///
+/// # Examples
+///
+/// ```
+/// extern crate commonregex_rs;
+///
+/// use commonregex_rs::commonregex;
+///
+/// let text = String::from("Contribute at https://github.com/fakenine/commonregex-rs !");
+///
+/// assert_eq!(vec!["https://github.com/fakenine/commonregex-rs"], commonregex::internet::url(&text));
+/// ```
+pub fn url(text: &String) -> Vec<&str> {
+    matcher::match_results(text, regex_drawer::internet::URL)
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;

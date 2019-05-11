@@ -30,6 +30,12 @@ let filtered_ips = commonregex::ip::v4(&log);
 commonregex::internet::email(&text)
 ```
 
+**URL**
+
+```rust
+commonregex::internet::url(&text)
+```
+
 ### IP Addresses
 
 **IPv4**
