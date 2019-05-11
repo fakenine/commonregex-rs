@@ -2,6 +2,21 @@
 
 🔎 Find common expressions in a string
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [commonregex-rs](#commonregex-rs)
+  - [Usage](#usage)
+  - [Features](#features)
+    - [Internet](#internet)
+    - [IP Addresses](#ip-addresses)
+    - [Phone numbers](#phone-numbers)
+  - [Documentation](#documentation)
+  - [Notes](#notes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Usage
 
 ```rust
