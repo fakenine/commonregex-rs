@@ -6,16 +6,25 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [commonregex-rs](#commonregex-rs)
-  - [Usage](#usage)
-  - [Features](#features)
-    - [Internet](#internet)
-    - [IP Addresses](#ip-addresses)
-    - [Phone numbers](#phone-numbers)
-  - [Documentation](#documentation)
-  - [Notes](#notes)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+  - [Internet](#internet)
+  - [IP Addresses](#ip-addresses)
+  - [Phone numbers](#phone-numbers)
+- [Documentation](#documentation)
+- [Notes](#notes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Installation
+
+Add this to your `Cargo.toml`
+
+```toml
+[dependencies]
+commonregex_rs = "0.1.0"
+```
 
 ## Usage
 
@@ -79,11 +88,7 @@ commonregex::phone::us(&text)
 
 ## Documentation
 
-Full documentation available via
-
-```sh
-$> cargo doc --open
-```
+Full documentation is available [here](https://docs.rs/commonregex_rs/0.1.0/commonregex_rs/)
 
 ## Notes
 
